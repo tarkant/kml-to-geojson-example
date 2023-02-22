@@ -1,0 +1,23 @@
+div {
+  font-family: sans-serif;
+}
+
+.dropzone {
+  height: 200px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #cfe2ff;
+  border: dashed 0.75rem #eee;
+}
+
+.geojson {
+  background-color: #eee;
+  border: solid 1px #aaa;
+  border-radius: 0.25rem;
+  display: flex;
+  width: 400px;
+  height: auto;
+  padding: 0.25rem;
+}

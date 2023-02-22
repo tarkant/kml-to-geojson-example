@@ -3,6 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "@mapbox/togeojson": "^0.16.0"
+    "@mapbox/togeojson": "^0.16.0",
+    "@tmcw/togeojson": "^5.6.0",
+    "@types/geojson": "^7946.0.10"
   }
 }

@@ -1,4 +1,4 @@
-import * as toGeoJson from '@mapbox/togeojson';
+import { kml } from "@tmcw/togeojson";
 import './style.css';
 
 // Handle the dropfile event
@@ -21,9 +21,7 @@ function dragOverHandler(ev) {
 
 // Convert the dragged kml file
 function handleDroppedFileToMap(fileResult: string) {
-  const geojsonFile = toGeoJson.kml(
-    new DOMParser().parseFromString(fileResult, 'text/xml')
-  );
+  const geojsonFile = kml(new DOMParser().parseFromString(fileResult, 'text/xml'));
   console.log(geojsonFile);
   // Display our dragged file in a fancy way
   const appDiv: HTMLElement = document.getElementById('app');
